@@ -15,13 +15,13 @@ This is just a copy for my own repository. You can go there to see my commits an
 
 If you want to use the site without going through the registration you can use the username and password below: **Username: guest@gmail.com **Password: password
 
-Video of the homepage
+Video of the Homepage
 
-![](hompage.gif)
+![](home.gif)
 
-Video of the characters page
+Video of the Characters page
 
-![](Characters.gif)
+![](Character.gif)
 
 Video of the Events page
 
@@ -29,8 +29,8 @@ Video of the Events page
 
 Video of the Movies page
 
-![](Movies.gif)
+![](Movie.gif)
 
 Video of the Favorites page
 
-![](Favorites.gif)
+![](Favorite.gif)
