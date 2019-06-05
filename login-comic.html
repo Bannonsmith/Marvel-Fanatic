@@ -1,0 +1,73 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="homePage.css"></link>
+    <link rel="stylesheet" href="login-comic.css"></link>
+
+
+
+
+    </head>
+          <body>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="homePage.html">Home</a>
+              <a href="favorites.html">Favorites</a>
+              <a href="home.html">Characters</a>
+              <a href="events.html">Events</a>
+              <a href="videos.html">Movies</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span id = "openNav" onclick="openNav()">Menu</span>
+      <div id="main">
+
+
+            <div class="signIn">
+            <h1> Become a Member </h1>
+          <b><p> Create an account and save your</p></b>
+          <b><p>favorite comics, characters and events!</p></b>
+
+
+        <div>
+            <h2>Create an Account</h2>
+            <input type="text" id='emailTextBox' placeholder="Enter email address"/>
+            <input type="password" id='passwordTextBox' placeholder="Password" />
+            <button id='register'> Sign up </button>
+          </div>
+          <div id = 'registerNotification' style = 'padding-top:.5em;color:red;'></div>
+          <div>
+            <h3>Already a Member</h3>
+            <input type="text" id="loginTextBox" placeholder="Email"/>
+            <input type="password" id="loginPasswordBox" placeholder="Password" />
+            <button id="loginButton">Login</button>
+          </div>
+          <div id = 'wrongPassword' style = 'padding-top:.5em;color:red;'></div>
+
+        <div>
+          <h4> Sign Out </h4>
+          <button id="signOutButton">SignOut</button>
+          </div>
+        </div>
+          </body>
+    </div>
+
+
+<script src = 'homePage.js'></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAhcCAAu9uwN3WstTBXDUEGVuqt9pYX-Rw",
+    authDomain: "comics-group-project.firebaseapp.com",
+    databaseURL: "https://comics-group-project.firebaseio.com",
+    projectId: "comics-group-project",
+    storageBucket: "comics-group-project.appspot.com",
+    messagingSenderId: "61759697804"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src= "login-comic.js"> </script>
+</html>

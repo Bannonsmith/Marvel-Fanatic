@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="favorites.css"></link>
+
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="homePage.html">Home</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="home.html">Characters</a>
+      <a href="events.html">Events</a>
+      <a href="videos.html">Movies</a>
+      <a href=# id = 'signOutSelect'>Sign Out</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <div id = "openNav" onclick="openNav()">Menu</div>
+    <a id = 'introText' class="nav-link" href="login-comic.html"></a>
+    <b><h1 id="header">My Favorite Superheroes</h1></b>
+    <h2 id = 'header2'>Add a hero using the search bar below!</h2>
+    <div class = 'submit'>
+      <input id = 'textField' type = 'text'>
+      <input id = 'textSubmit' type = 'submit'>
+    </div>
+      <UL id = 'marvelCharacters'></UL>
+  </body>
+  <script src = 'homePage.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAhcCAAu9uwN3WstTBXDUEGVuqt9pYX-Rw",
+    authDomain: "comics-group-project.firebaseapp.com",
+    databaseURL: "https://comics-group-project.firebaseio.com",
+    projectId: "comics-group-project",
+    storageBucket: "comics-group-project.appspot.com",
+    messagingSenderId: "61759697804"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src = 'favorites.js'></script>
+    <script src = 'signOut.js'></script>
+</html>

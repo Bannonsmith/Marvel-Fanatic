@@ -1,0 +1,191 @@
+
+.banner {
+  height:25em;
+  background-image:url("Photos/marvellogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: createBox 1s;
+  width:100%;
+}
+
+@keyframes createBox{
+  from {
+    transform:scale(0,1);
+  }
+  to {
+    transform:scale(1,1);
+  }
+}
+
+#logo{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-stretch: extra-expanded;
+  font-size-adjust: auto;
+  font-family: Benton Sans;
+  margin: 10px;
+  transition:1s ease-in-out;
+}
+
+#introText {
+  text-align: center;
+  color:white;
+  font-size:2em;
+  letter-spacing:.1em;
+  transition:all .2s ease-in-out;
+  background-color:rgb(177, 177, 177);
+}
+
+#introText:hover{
+  transform:scale(1.05);
+}
+
+.intro-flex{
+  display:flex;
+}
+.navbar{
+  background-color: black;
+  color: white;
+  margin-left:8em;
+}
+.navbarItems{
+  font: white;
+}
+.collapse ul li a{
+  color: black
+}
+
+nav a {
+  color: black
+}
+.carousel-caption{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  /* filter: drop-shadow(16px 16px 10px white) */
+
+}
+.size{
+  z-index: 0;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.flex-container {
+  display: flex;
+  padding: 25px;
+  margin: 25px;
+  background-color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+.card{
+  color: white;
+  background-color: black;
+  text-shadow: 2px 2px 4px #000000;
+  filter: drop-shadow(16px 16px 10px white)
+}
+#openNav{
+  color: rgb(235, 235, 235);
+  text-align: center;
+  font-size: 2em;
+  margin-top:1em;
+  background-color: rgb(184, 27, 27);
+  border: 2px solid rgb(0, 0, 0);
+  width:4em;
+  height:3.5em;
+  line-height:3em;
+  cursor: pointer;
+  position:fixed;
+  z-index: 1;
+}
+
+.mr-3{
+  max-width: 35%;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(64, 59, 59, 0.2), 0 6px 20px 0 rgba(31, 3, 3, 0.93);
+
+}
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(64, 59, 59, 0.2), 0 6px 20px 0 rgba(31, 3, 3, 0.93);
+
+}
+.media-object{
+  background-color: white;
+  justify-content: center;
+}
+.media{
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for the side bar */
+/* The side navigation menu */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
