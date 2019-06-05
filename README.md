@@ -17,7 +17,7 @@ If you want to use the site without going through the registration you can use t
 
 Video of the Homepage
 
-![](home.gif)
+![](Home.gif)
 
 Video of the Characters page
 
@@ -29,7 +29,7 @@ Video of the Events page
 
 Video of the Movies page
 
-![](Movie.gif)
+![](Movies.gif)
 
 Video of the Favorites page
 
